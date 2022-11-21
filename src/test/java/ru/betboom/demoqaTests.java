@@ -1,7 +1,6 @@
 package ru.betboom;
 
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -69,7 +68,8 @@ public class demoqaTests {
 
         // Check registration form
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave((text(firstName)),
+        $(".table-responsive").shouldHave(
+                text(firstName),
                 text(lastName),
                 text(userEmail),
                 text(genter),
@@ -82,7 +82,8 @@ public class demoqaTests {
                 text(file),
                 text(currentAddress),
                 text(state),
-                text(city));
+                text(city)
+        );
 
         $("#closeLargeModal").click();
     }
