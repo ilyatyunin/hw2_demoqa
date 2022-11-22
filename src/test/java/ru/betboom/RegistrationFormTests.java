@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class demoqaTests {
+public class RegistrationFormTests {
 
     @BeforeAll
     static void firstConfigure() {
@@ -34,7 +34,7 @@ public class demoqaTests {
         String subjects = "Maths";
         String hobbies = "Sports";
         String dir = "src/test/resources/";
-        String file = "palmTrees.jpg";
+        String file = "PalmTrees.jpg";
         String currentAddress = "Moscow";
         String state = "Haryana";
         String city = "Karnal";
